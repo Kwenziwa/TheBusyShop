@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MediumButton">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="android:padding">@dimen/defaultPadding</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="SmallButton">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="android:padding">@dimen/defaultPadding</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MediumText">
+        <item name="android:padding">@dimen/defaultPadding</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SmallTextBold">
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/defaultPadding</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SmallText">
+        <item name="android:textSize">@dimen/smallTextSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/defaultPadding</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ItemCounter">
+        <item name="android:text">0</item>
+        <item name="android:background">@drawable/round_item</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/defaultPadding</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonAdd">
+        <item name="android:text">0</item>
+        <item name="android:background">@drawable/round_item</item>
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/defaultPadding</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="roundedCornersImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">The Busy Shop</string>
+    <string name="image_url">gs://the-busy-shop.appspot.com/</string>
+    <string name="add_text">Add</string>
+    <string name="add_more">Add more</string>
+    <string name="subtract_text">Subtract</string>
+    <string name="price_text">R %1$.2f</string>
+    <string name="quantity_text">x %1$d</string>
+    <string name="total_text">Total</string>
+
+    <string name="description_header_text">Description</string>
+    <string name="quantity_header_text">Qty</string>
+    <string name="amount_header_text">Amount</string>
+
+    <string name="confirm_text">Confirm</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="close_text">Close</string>
+    <string name="added_text">Added</string>
+    <string name="unrecognised_text">Unrecognised</string>
+
+    <string name="error_message">Something went wrong</string>
+    <string name="permissions_error_message">You need to accept permissions to use ths app</string>
+    <string name="try_again">Try Again</string>
+    <string name="checkout">Check-Out</string>
+    <string name="cart">Cart</string>
+    <string name="empty_cart_string">You can add items by clicking the plus button</string>
+    <string name="receipt_title">Ikhokha Receipt</string>
+    <string name="receipt_request">Would you like a receipt</string>
+    <string name="cancel_confirm_text">Cancelling will clear your cart, do you want to continue?</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="no_internet_txt">Error</string>
+    <string name="internet_msg">No Internet connection. Please Make sure that Wi-Fi or mobile data is turned on and try again</string>
+    <string name="oops">Oops!</string>
+    <string name="clear_text">Clear</string>
+    <string name="the_busy_shop">The Busy Shop</string>
+</resources>

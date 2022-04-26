@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ikhokha.techcheck"
+        minSdkVersion 25
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+
+    //Local Test
+    testImplementation "junit:junit:$junit_version"
+    testImplementation "org.hamcrest:hamcrest-all:$hamcrest_version"
+    testImplementation "androidx.arch.core:core-testing:$arch_core_testing_version"
+    testImplementation "org.robolectric:robolectric:$robolectric_version"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlinx_coroutines_version"
+    testImplementation "com.google.truth:truth:$truth_version"
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+
+
+    //Instrumented Test
+    androidTestImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:1.1.2"
+    androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:$linkedin_dexmaker"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
+    androidTestImplementation "androidx.arch.core:core-testing:$arch_core_testing_version"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlinx_coroutines_version"
+    androidTestImplementation "com.google.truth:truth:$truth_version"
+    androidTestImplementation "org.mockito:mockito-core:$mockito_version"
+
+
+
+    //room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //glide for images
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+
+    //Barcode scanner
+    implementation 'com.google.mlkit:barcode-scanning:16.1.0'
+    //implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3'
+
+    //CameraX
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+    // CameraX Lifecycle Library
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+    // CameraX View class
+    implementation "androidx.camera:camera-view:1.0.0-alpha14"
+
+    //material dialog
+    implementation "com.afollestad.material-dialogs:datetime:$material_dialog_version"
+    implementation "com.afollestad.material-dialogs:bottomsheets:$material_dialog_version"
+    implementation "com.afollestad.material-dialogs:input:$material_dialog_version"
+
+    //Check internet connectivity
+    implementation 'com.github.nyoniempire:CheckInternetAndLocationPermissions:0.3.1'
+
+    //Dagger
+    implementation "com.google.dagger:hilt-android:2.28-alpha"
+    kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
+
+    //androidx hilt
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$androidx_hilt"
+    kapt "androidx.hilt:hilt-compiler:$androidx_hilt"
+    // Lottie Library for animations
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    // Toast Message
+    implementation "com.github.Spikeysanju:MotionToast:$motionToast"
+
+}

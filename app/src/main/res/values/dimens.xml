@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="floating_action_button_size">60dp</dimen>
+    <dimen name="tinyTextSize">12sp</dimen>
+    <dimen name="smallTextSize">15sp</dimen>
+    <dimen name="mediumTextSize">28sp</dimen>
+    <dimen name="defaultMargin">8dp</dimen>
+    <dimen name="defaultPadding">2dp</dimen>
+</resources>
